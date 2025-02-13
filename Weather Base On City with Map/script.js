@@ -23,6 +23,8 @@ document.getElementById("weatherForm").addEventListener("submit", function(event
           const lat = data.coord.lat;
           const lon = data.coord.lon;
           const temperature = data.main.temp;
+          const humidity = data.main.humidity;
+          const windSpeed = data.wind.speed;
           const weatherDescription = data.weather[0].description;
 
           // Move map to the city's location
@@ -31,7 +33,13 @@ document.getElementById("weatherForm").addEventListener("submit", function(event
           // Add a marker with weather details
           L.marker([lat, lon])
             .addTo(map)
-            .bindPopup(`<b>${data.name}</b><br>Temp: ${temperature}°C<br>${weatherDescription}`)
+            .bindPopup(
+              `<b>${data.name}</b><br>
+              🌡️ Temp: ${temperature}°C<br>
+              💧 Humidity: ${humidity}%<br>
+              🌬️ Wind Speed: ${windSpeed} m/s<br>
+              ☁️ ${weatherDescription}`
+            )
             .openPopup();
         } else {
           alert("City not found!");
