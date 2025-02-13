@@ -1,5 +1,3 @@
----
-
 ### **🌍 Weather Forecast with Interactive World Map**  
 **Author:** Ankit Vishwakarma  
 
