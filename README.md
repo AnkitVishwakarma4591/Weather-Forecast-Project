@@ -1,16 +1,19 @@
 ---
 
-### **🌍 Weather Forecast with Interactive World Map**
+### **🌍 Weather Forecast with Interactive World Map**  
 **Author:** Ankit Vishwakarma  
 
-#### **📌 Project Overview**
-This project provides a **real-time weather forecast** using OpenWeather API and an interactive **world map**. Users can enter a **city name**, and the map will zoom in to the selected city, displaying:  
-✔ **Temperature** (°C)  
-✔ **Humidity** (%)  
-✔ **Wind Speed** (m/s)  
-✔ **Weather Description**  
+#### **📌 Project Overview**  
+This project provides a **real-time weather forecast** using the **OpenWeather API** and an interactive **world map**. Users can enter a **city name**, and the map will zoom in to the selected location, displaying:  
+
+- **Temperature (°C)**  
+- **Humidity (%)**  
+- **Wind Speed (m/s)**  
+- **Weather Description**  
 
 ---
+
+
 
 ## **🚀 Features**
 - 🌎 **World Map Integration** (Using Leaflet.js)  
